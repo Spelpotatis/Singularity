@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singularity</title>
+</head>
+<body>
+    <p id="collectedData">Training Data: 0 bits</p>
+    <div id="tabs">
+        <button onclick="tab('dataTab')">Data Collection</button>
+        <button onclick="tab('upgradeTab')">Upgrades</button>
+    </div>
+
+    <div id="dataTab">
+        <button onclick="collectData()">Collect Data</button>
+    </div>
+
+    <div id="upgradeTab">
+        <button onclick="buyUpgrade(gameData.upgrades.clickUpOne,dataUpgrades.clickUpOne)" id="clickUpgradeOne">Increase Data Collection (level: 1) (cost: 10) (Increases Data Per Click by 1)</button>
+        <br>
+        <button onclick="buyUpgrade(gameData.upgrades.passiveUpOne,dataUpgrades.passiveUpOne)" id="passiveUpgradeOne">Upgrade your Automation (level: 0) (cost: 50) (Increases Data Per Second by 1)</button>
+        <br>
+        <button onclick="buyUpgrade(gameData.upgrades.passiveUpTwo,dataUpgrades.passiveUpOne)" id="passiveUpgradeTwo">Upgrade your Automation (level: 0) (cost: 300) (Increases Data Per Second by 3)</button>
+        <br>
+        <button onclick="buyUpgrade(gameData.upgrades.passiveUpThree,dataUpgrades.passiveUpOne)" id="passiveUpgradeThree">Upgrade your Automation (level: 0) (cost: 1700) (Increases Data Per Second by 10)</button>
+    </div>
+
+    <script src="js/main.js" charset="utf-8" type="text/javascript"></script>
+</body>
+</html>
