@@ -73,11 +73,11 @@ function getDataPerClick(){
 }
 
 function updateElements() {
-    update("collectedData", "Training Data: " + format(gameData.data) + " bits")
-    update("clickUpgradeOne", "Increase Data Collection (level: " + format(gameData.upgrades.clickUpOne.level) + ") (Cost: "+ format(dataUpgrades.clickUpOne.cost(gameData.upgrades.clickUpOne.level)) +")(Increases Data Per Click by 1)")
-    update("passiveUpgradeOne", "Upgrade your Automation (level: " + format(gameData.upgrades.passiveUpOne.level) + ") (Cost: "+ format(dataUpgrades.passiveUpOne.cost(gameData.upgrades.passiveUpOne.level)) +")(Increases Data Per Second by 1)")
-    update("passiveUpgradeTwo", "Upgrade your Automation (level: " + format(gameData.upgrades.passiveUpTwo.level) + ") (Cost: "+ format(dataUpgrades.passiveUpTwo.cost(gameData.upgrades.passiveUpTwo.level)) +")(Increases Data Per Second by 3)")
-    update("passiveUpgradeThree", "Upgrade your Automation (level: " + format(gameData.upgrades.passiveUpThree.level) + ") (Cost: "+ format(dataUpgrades.passiveUpThree.cost(gameData.upgrades.passiveUpThree.level)) +")(Increases Data Per Second by 10)")
+    update("collectedData", "Training Data: " + format(gameData.data,scientific) + " bits")
+    update("clickUpgradeOne", "Increase Data Collection (level: " + format(gameData.upgrades.clickUpOne.level,scientific) + ") (Cost: "+ format(dataUpgrades.clickUpOne.cost(gameData.upgrades.clickUpOne.level),scientific) +")(Increases Data Per Click by 1)")
+    update("passiveUpgradeOne", "Upgrade your Automation (level: " + format(gameData.upgrades.passiveUpOne.level,scientific) + ") (Cost: "+ format(dataUpgrades.passiveUpOne.cost(gameData.upgrades.passiveUpOne.level),scientific) +")(Increases Data Per Second by 1)")
+    update("passiveUpgradeTwo", "Upgrade your Automation (level: " + format(gameData.upgrades.passiveUpTwo.level,scientific) + ") (Cost: "+ format(dataUpgrades.passiveUpTwo.cost(gameData.upgrades.passiveUpTwo.level),scientific) +")(Increases Data Per Second by 3)")
+    update("passiveUpgradeThree", "Upgrade your Automation (level: " + format(gameData.upgrades.passiveUpThree.level,scientific) + ") (Cost: "+ format(dataUpgrades.passiveUpThree.cost(gameData.upgrades.passiveUpThree.level),scientific) +")(Increases Data Per Second by 10)")
 }
 
 
@@ -112,4 +112,3 @@ function merge(a,b) {
         }
     }
 }
-
